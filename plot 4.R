@@ -16,7 +16,7 @@ with(subpower,{
   with(subpower,lines(Time,as.numeric(as.character(Sub_metering_1))))
   with(subpower,lines(Time,as.numeric(as.character(Sub_metering_2)),col="red"))
   with(subpower,lines(Time,as.numeric(as.character(Sub_metering_3)),col="blue"))
-  legend("topright",lty = 1,col = c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+  legend("topright",lty = 1,col = c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),cex = 0.6)
   plot(subpower$Time,as.numeric(as.character(subpower$Global_reactive_power)),type="l",xlab="datetime",ylab="Global_reactive_power")
 })
 
