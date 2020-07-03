@@ -9,5 +9,5 @@ subpower[1441:2880,"Time"] <- format(subpower[1441:2880,"Time"],"2007-02-02 %H:%
 
 plot(subpower$Time,as.numeric(subpower$Global_active_power),type = "l", xlab = "", ylab = "Global Active Power (kilowatts)", main="Global Active Power and Time")
 
-dev.copy(png,file = "plot2.png")
+dev.copy(png,file = "plot2.png",height = 480, width = 480)
 dev.off()

@@ -20,5 +20,5 @@ with(subpower,{
   plot(subpower$Time,as.numeric(as.character(subpower$Global_reactive_power)),type="l",xlab="datetime",ylab="Global_reactive_power")
 })
 
-dev.copy(png,file = "plot4.png")
+dev.copy(png,file = "plot4.png",height = 480, width = 480)
 dev.off()
